@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven - Subscription</title>
+    <style>
+        /* Common Header Styles */
+        nav {
+            background-color: #3498db;
+            padding: 15px 40px; /* Increased padding for better appearance */
+            color: #ffffff;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: flex-start; /* Adjusted alignment */
+            align-items: center;
+            transition: top 0.3s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .home-link {
+            margin-right: auto; /* Ensure home link is aligned to the left */
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            .home-link {
+                display: none;
+            }
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            background-color: #2980b9; /* Updated background color */
+            color: #ffffff;
+            text-align: center;
+            padding: 100px 0;
+            margin-top: 60px;
+        }
+
+        .hero-overlay {
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Subscription Plans Styles */
+        .subscription-plans-container {
+            margin-top: 20px;
+        }
+
+        .subscription-plans {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .plan {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .plan h3 {
+            margin-bottom: 10px;
+            color: #3498db;
+        }
+
+        .plan p {
+            margin-bottom: 15px;
+        }
+
+        .plan a {
+            text-decoration: none;
+        }
+
+        .plan button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .plan button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="homepage.html" class="home-link">Home</a>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-overlay">
+            <h1>Subscription Plans</h1>
+            <p>Unlock a world of unlimited reading with our subscription plans</p>
+        </div>
+    </div>
+
+    <div class="container subscription-plans-container">
+        <h2>Choose Your Plan</h2>
+        <div class="subscription-plans">
+            <div class="plan">
+                <h3>Basic</h3>
+                <p>Access to a limited selection of books</p>
+                <p>$9.99/month</p>
+                <a href="subscribe/basic.html"><button>Select Plan</button></a>
+            </div>
+            <div class="plan">
+                <h3>Premium</h3>
+                <p>Access to a wider range of books, including bestsellers</p>
+                <p>$19.99/month</p>
+                <a href="subscribe/premium.html"><button>Select Plan</button></a>
+            </div>
+            <div class="plan">
+                <h3>Ultimate</h3>
+                <p>Unlimited access to our entire library</p>
+                <p>$29.99/month</p>
+                <a href="subscribe/ultimate.html"><button>Select Plan</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

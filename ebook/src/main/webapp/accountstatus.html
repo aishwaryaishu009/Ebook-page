@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account Status</title>
+</head>
+<body>
+    <h1>Welcome to Your Account</h1>
+    <div id="userDetails">
+        <!-- User details will be displayed here -->
+    </div>
+    <script>
+        // Retrieve username from session or URL parameter
+        var username = "<%= session.getAttribute('username') %>";
+
+        // Fetch user details using AJAX
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("userDetails").innerHTML = this.responseText;
+            }
+        };
+        xhr.open("GET", "UserServlet?username=" + username, true);
+        xhr.send();
+    </script>
+</body>
+</html>
